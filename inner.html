@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html" aria-label="На главную"><img class="header-logo-inner" src="img/nerds-logo.svg" width="170" height="70" alt="Логотип студии Nerd's"></a>
+          <ul class="site-navigation">
+            <li><a class="studio" href="#" aria-label="Студия">Студия</a></li>
+            <li><a class="clients" href="#" aria-label="Клиенты">Клиенты</a></li>
+            <li><a class="shop active" href="inner.html" aria-label="Магазин">Магазин</a></li>
+            <li><a class="contacts" href="#" aria-label="Контакты">Контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li><a class="cart" href="#" aria-label="Корзина">Корзина</a></li>
+          </ul>
+      </nav>
+      <h1>Магазин готовых шаблонов</h1>
+    </header>
+    <main class="main-catalog">
+      <h2 class="visually-hidden">Наши макеты</h2>
+      <aside class="left-column">
+        <h3 class="visually-hidden">Фильтры</h3>
+        <form class="filter" action="#" method="get">
+          <label class="filter-label">Стоимость:</label>
+          <div class="price-filter">
+            <div class="price-filter-box">
+              <div class="price-filter-line"></div>
+              <span class="price-filter-handle handle-min" tabindex="0" aria-label="Минимальная стоимость"></span>
+              <span class="price-filter-handle handle-max" tabindex="0" aria-label="Максимальная стоимость"></span>
+            </div>
+            <p>от <input type="number" name="pricemin" value="0"> до <input type="number" name="pricemax" value="15000"></p>
+          </div>
+          <div class="grid-filter">
+            <label class="filter-label">Сетка:</label>
+            <p>
+              <input type="radio" name="grid" id="adaptive" value="Адаптивная" checked>
+              <label for="adaptive" tabindex="0">Адаптивная</label>
+            </p>
+            <p>
+              <input type="radio" name="grid" id="fix" value="Фиксированная">
+              <label for="fix" tabindex="0">Фиксированная</label>
+            </p>
+            <p class="disabled">
+              <input type="radio" name="grid" id="rubber" value="Резиновая" disabled>
+              <label for="rubber" tabindex="0">Резиновая</label>
+            </p>
+          </div>
+          <div class="features-filter">
+            <label class="filter-label">Особенности:</label>
+            <p>
+              <input type="checkbox" name="feature-slider" id="slider" checked>
+              <label for="slider" tabindex="0">Слайдер</label>
+            </p>
+            <p>
+              <input type="checkbox" name="feature-adventage" id="adventage">
+              <label for="adventage" tabindex="0">Блок преимуществ</label>
+            </p>
+            <p>
+              <input type="checkbox" name="feature-news" id="news" checked>
+              <label for="news" tabindex="0">Новости</label>
+            </p>
+            <p>
+              <input type="checkbox" name="feature-gallery" id="gallery">
+              <label for="gallery" tabindex="0">Галерея</label>
+            </p>
+            <p>
+              <input type="checkbox" name="feature-cart" id="cart">
+              <label for="cart" tabindex="0">Корзина</label>
+            </p>
+          </div>
+          <button class="filter-button" type="submit" name="show">Показать</button>
+        </form>
+      </aside>
+      <section class="main-content">
+        <div class="sort-filter">
+          <h3 class="visually-hidden">Сортировка</h3>
+          <form class="sort">
+            <label class="filter-label">Сортировать:</label>
+            <div class="sort-left">
+              <p>
+                <input type="radio" name="sort" id="price-sort" value="По цене" checked>
+                <label for="price-sort">По цене</label>
+              </p>
+              <p>
+                <input type="radio" name="sort" id="type-sort" value="По типу">
+                <label for="type-sort">По типу</label>
+              </p>
+              <p>
+                <input type="radio" name="sort" id="name-sort" value="По названию">
+                <label for="name-sort">По названию</label>
+              </p>
+            </div>
+            <div class="sort-right">
+              <p class="ascending-sort">
+                <input type="radio" name="order" id="ascending" value="По возрастанию" checked>
+                <label for="ascending"></label>
+              </p>
+              <p class="descending-sort">
+                <input type="radio" name="order" id="descending" value="По убыванию">
+                <label for="descending"></label>
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="web-templates">
+          <div class="web-templates-item">
+            <div class="template-decoration">
+              <span class="template-dot"></span>
+              <span class="template-dot"></span>
+              <span class="template-dot"></span>
+            </div>
+            <img class="web-templates-image" src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
+            <div class="template-description">
+              <a class="sedona-modal" href="#" aria-label="Седона">Sedona</a>
+              <p>Информационный сайт <br> для туристов</p>
+              <span class="button">9 900 РУБ.</span>
+            </div>
+          </div>
+          <div class="web-templates-item">
+            <div class="template-decoration">
+              <span class="template-dot"></span>
+              <span class="template-dot"></span>
+              <span class="template-dot"></span>
+            </div>
+            <img class="web-templates-image" src="img/img-pink.jpg" width="360" height="576" alt="Pink">
+            <div class="template-description">
+              <a class="pink-modal" href="#" aria-label="Пинк">Pink APP</a>
+              <p>Продуктовый лендинг <br> приложения OS и Андроид</p>
+              <span class="button">9 900 РУБ.</span>
+            </div>
+          </div>
+          <div class="web-templates-item">
+            <div class="template-decoration">
+              <span class="template-dot"></span>
+              <span class="template-dot"></span>
+              <span class="template-dot"></span>
+            </div>
+            <img class="web-templates-image" src="img/img-barbershop.jpg" width="360" height="576" alt="Borodinski">
+            <div class="template-description">
+              <a class="barbershop-modal" href="#" aria-label="Барбершоп Бородинский">Barbershop</a>
+              <p>Сайт салона красоты. <br> Для мужчин, да.</p>
+              <span class="button">9 900 РУБ.</span>
+            </div>
+          </div>
+          <div class="web-templates-item">
+            <div class="template-decoration">
+              <span class="template-dot"></span>
+              <span class="template-dot"></span>
+              <span class="template-dot"></span>
+            </div>
+            <img class="web-templates-image" src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
+            <div class="template-description">
+              <a class="mishka-modal" href="#" aria-label="Мишка">Mishka</a>
+              <p>Интернет-магазин <br> вязаных игрушек.</p>
+              <span class="button">9 900 РУБ.</span>
+            </div>
+          </div>
+          <div class="web-templates-item">
+            <div class="template-decoration">
+              <span class="template-dot"></span>
+              <span class="template-dot"></span>
+              <span class="template-dot"></span>
+            </div>
+            <img class="web-templates-image" src="img/img-aplus.jpg" width="360" height="576" alt="A+">
+            <div class="template-description">
+              <a class="a+-modal" href="#" aria-label="А плюс">A plus</a>
+              <p>Лендинг курсов повышения <br> квалификации</p>
+              <span class="button">9 900 РУБ.</span>
+            </div>
+          </div>
+          <div class="web-templates-item">
+            <div class="template-decoration">
+              <span class="template-dot"></span>
+              <span class="template-dot"></span>
+              <span class="template-dot"></span>
+            </div>
+            <img class="web-templates-image" src="img/img-kvast.jpg" width="360" height="576" alt="Kvast">
+            <div class="template-description">
+              <a class="kvast-modal" href="#" aria-label="Кваст">Кваст</a>
+              <p>Промо-сайт производителя <br> крафтового кваса</p>
+              <span class="button">9 900 РУБ.</span>
+            </div>
+          </div>
+        </div>
+        <div class="paginator">
+          <a class="page disabled" aria-label="Страница 1">1</a>
+          <a class="page" href="#2" aria-label="Страница 2">2</a>
+          <a class="page" href="#3" aria-label="Страница 3">3</a>
+          <a class="page next" href="#next" aria-label="Следующая">Следующая</a>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <section class="map">
+        <iframe class="interactive-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab0f7ece82fbf90cd0dccb2aff1b66b3bf8017ade7876bf40e6bb655071843367&amp;source=constructor"></iframe>
+        <div class="adress">
+          <h5>Nёrd's design studio</h5>
+          <p>191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
+          <span class="phone" aria-label="Телефон">тел. +7(812)275-75-75</span><br>
+          <button class="write-us-button" aria-label="Напишите нам">Напишите нам</button>
+        </div>
+      </section>
+      <form class="modal-window" action="index.html" method="post">
+        <div class="modal-window-header">
+          <label class="modal-window-label">Напишите нам</label>
+          <button class="close-button" type="button" name="close" aria-label="Закрыть"></button>
+        </div>
+        <div class="half-width">
+          <p>
+            <label for="name">Ваше имя:</label><br>
+            <input type="text" name="yourname" id="name" placeholder="Представьтесь, пожалуйста">
+          </p>
+          <p>
+            <label for="email">Ваш e-mail:</label><br>
+            <input type="email" name="youremail" id="email" placeholder="Для отправки ответа">
+          </p>
+        </div>
+        <div class="full-width">
+          <label for="comment">Текст письма:</label><br>
+          <textarea name="commentfield" id="comment" rows="4" cols="60" placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="send-button" type="submit" name="submit-button" aria-label="Отправить">Отправить</button>
+      </form>
+      <section class="social">
+        <h6 class="visually-hidden">Мы в социальных сетях</h6>
+        <ul class="social-list">
+          <li><a class="social-vk" href="https://vk.com/" target="_blank" aria-label="Вконтакте"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a></li>
+          <li><a class="social-fb" href="https://www.facebook.com/" target="_blank" aria-label="Фейсбук"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
+          <li><a class="social-instagram" href="https://www.instagram.com/" target="_blank" aria-label="Инстаграм"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a></li>
+        </ul>
+        <div class="social-text">
+          <span class="letsbefriends">Давайте дружить, это выгодно!</span>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </section>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
